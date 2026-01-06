@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --blue-gradient-background: linear-gradient(
+        to bottom,
+        #1574bc 0%,
+        #093575 100%
+    );
+    --body-background: linear-gradient(to bottom, #e0e0e0 0%, #757575 100%);
+    --container-background: #093575;
+    /* --card-background: linear-gradient(to bottom, #1f4894 0%, #143064 100%); */
+    /* --card-background: linear-gradient(to bottom, #e0e0e0 0%, #757575 100%); */
+    --card-background: rgb(75, 128, 172);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -1.5px;
+}
+
+html {
+    min-height: 100vh;
+    background: var(--body-background);
+}
+
+body {
+    text-align: center;
+}
+
+body > h1 {
+    margin: 10px 0 10px 0;
+}
+
+.screen-container {
+    background: var(--blue-gradient-background);
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    min-height: 150px;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+    width: 50%;
+    height: 35px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding-left: 15px;
+    letter-spacing: 0.5px;
+}
+
+form input:hover {
+    box-shadow: inset 0 0 0 1px rgb(156, 156, 156);
+}
+
+form input:focus {
+    box-shadow: inset 0 0 0 2px rgb(20, 20, 20);
+}
+
+form input:focus-visible {
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+form button {
+    width: 5%;
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+    appearance: none;
+    border: none;
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    font-weight: 800;
+}
+
+form button:hover {
+    box-shadow: inset 0 0 0 1px rgb(156, 156, 156);
+}
+
+.hero-container {
+    margin-top: 20px;
+    color: white;
+}
+
+.city-hero {
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.temp-hero {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.condition-hero-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.condition-hero-img {
+    display: inline-block;
+    width: 50px;
+}
+
+.condition-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-background);
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 15px;
+    gap: 10px;
+    border-radius: 6px;
+}
+
+.condition-container * {
+    letter-spacing: 0px;
+    font-weight: 200;
+}
+
+.condition-container > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weather-week-container {
+    background-color: var(--container-background);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.weather-week-container > div {
+    background: var(--card-background);
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.weather-week-container img {
+    height: 42px;
+}
+
+.weather-week-container h4 {
+    font-weight: 200;
+}
+
+.weather-week-container > div :last-child {
+    letter-spacing: 0px;
+}
+
+.measurement-container {
+    text-align: center;
+}
+
+.celsius-btn,
+.fahrenheit-btn {
+    margin-top: 7px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 30px;
+    color: #313131;
+    /* text-align: center; */
+    border: none;
+}
+
+.celsius-btn {
+    border-radius: 10px 0 0 10px;
+}
+
+.fahrenheit-btn {
+    border-radius: 0 10px 10px 0;
+}
+
+.celsius-btn:hover,
+.fahrenheit-btn:hover {
+    box-shadow: inset 0 0 0 1px rgb(156, 156, 156);
+}
